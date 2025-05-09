@@ -43,7 +43,7 @@ export default function Header() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, staggerChildren: 0.1 }}
         >
-          {['Home', 'Roadmap', 'Service', 'Project', 'About us'].map((item) => (
+          {['Home', 'Roadmap', 'About us'].map((item) => (
             <motion.div
               key={item}
               whileHover={{ y: -2 }}
@@ -61,7 +61,7 @@ export default function Header() {
 
         <div className="flex items-center space-x-4">
           <motion.a
-            href="https://github.com"
+            href="https://github.com/vixdex"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
@@ -70,7 +70,7 @@ export default function Header() {
             <Github className="w-5 h-5 text-white" />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://x.com/vixdex_finance"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}

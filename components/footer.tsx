@@ -1,15 +1,19 @@
-"use client"
+'use client';
 
-import { motion } from "framer-motion"
-import Link from "next/link"
-import { Github, Twitter } from "lucide-react"
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { Github, Twitter } from 'lucide-react';
 
 export default function Footer() {
   return (
     <footer className="bg-black border-t border-gray-800">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <Link href="/" className="retro-text text-2xl font-bold text-white">
               VixDex
             </Link>
@@ -21,10 +25,10 @@ export default function Footer() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            {["Home", "RoadMap", "service", "project", "about us"].map((item) => (
+            {['Home', 'RoadMap', 'about us'].map((item) => (
               <Link
                 key={item}
-                href={`#${item.toLowerCase().replace(" ", "-")}`}
+                href={`#${item.toLowerCase().replace(' ', '-')}`}
                 className="text-gray-400 hover:text-teal-400 transition-colors"
               >
                 {item}
@@ -39,7 +43,7 @@ export default function Footer() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <a
-              href="https://github.com"
+              href="https://github.com/vixdex"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -47,7 +51,7 @@ export default function Footer() {
               <Github size={20} />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/vixdex_finance"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -64,7 +68,7 @@ export default function Footer() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            email@gmail.com
+            social@vixdex.finance
           </motion.p>
 
           <motion.p
@@ -73,10 +77,10 @@ export default function Footer() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Copyright Vixdex
+            &copy;&nbsp;{new Date().getFullYear()} Vixdex. All rights reserved.
           </motion.p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
