@@ -24,8 +24,8 @@ export default function About() {
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
-              VixDex - Implied Volatility Trading Protocol - Simpler Than
-              Options
+              VixDex - Implied Volatility Trading Protocol - unlockoing
+              volatility derivatives for all
             </motion.h2>
             <motion.p
               className="text-gray-400 mb-6"
@@ -33,13 +33,18 @@ export default function About() {
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
             >
-              VixDex lets you trade volatility directly, without the
-              complexities of strike prices, expiries, or options greeks. Built
-              on Uniswap V4, it introduces High-IV and Low-IV tokens that
-              reflect the market's real-time implied volatility for any ERC-20
-              asset. Instead of betting on price direction, VixDex lets you
-              speculate on how volatile the market will be, using a fully
-              on-chain, It’s everything options try to do but{' '}
+              VixDex empowers anyone-whether you're a developer, influencer, or
+              everyday user—to effortlessly create volatility derivatives for
+              any ERC-20 token, from meme coins to utility tokens, in just a few
+              clicks. Your community can then trade these derivatives without
+              dealing with the complexities of strike prices, expiry dates, or
+              traditional options mechanics. Built on Uniswap V4, Vixex
+              introduces unique High-IV and Low-IV tokens that capture the
+              real-time implied volatility of any listed asset. Rather than
+              betting on price direction, VixDex enables users to speculate on
+              how volatile the market will be—all through a fully on-chain,
+              decentralized platform. To get started, simply list your token on
+              Uniswap.
               <strong>
                 simpler, more transparent, and fully decentralized.
               </strong>

@@ -9,6 +9,7 @@ import Ecosystem from '@/components/ecosystem';
 import Faq from '@/components/faq';
 import Footer from '@/components/footer';
 import WhatIs from '@/components/what-is';
+import ScrollSections from '@/components/scroll-sections';
 
 export default function Home() {
   return (
@@ -17,11 +18,13 @@ export default function Home() {
       <Hero />
       <About />
       <WhatIs />
+      <ScrollSections />
       <UseCases />
       <Roadmap />
       <Awards />
       <Ecosystem />
       <Faq />
+
       <Footer />
     </main>
   );

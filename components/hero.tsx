@@ -69,7 +69,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            Re-Innovating options with on-chain IV
+            Trade any crypto's volatility effortlessly{' '}
           </motion.h1>
           <motion.p
             className="text-lg md:text-xl text-gray-400 mb-8"
@@ -77,7 +77,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            Vixdex is dex that helps to trade implied volatility for any token
+            Videx is dex that helps to trade implied volatility for any token
             listed on uniswap
           </motion.p>
           <motion.p
