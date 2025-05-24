@@ -28,18 +28,19 @@ export default function Ecosystem() {
             >
               Built for the Uniswap Ecosystem
             </motion.h2>
-            <motion.p
-              className="text-gray-400 mb-6"
+            <motion.div
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
             >
-              VixDex seamlessly integrates with the Uniswap V4 infrastructure
-              while offering a custom pricing mechanism that sets it apart.
-              While we leverage the robust foundation of Uniswap's liquidity
-              pools, VixDex introduces its own volatility-driven bonding curve
-              to determine token prices. This enables:
-              <ul className="list-disc ml-6 mt-4">
+              <p className="text-gray-400 mb-4">
+                VixDex seamlessly integrates with the Uniswap V4 infrastructure
+                while offering a custom pricing mechanism that sets it apart.
+                While we leverage the robust foundation of Uniswap's liquidity
+                pools, VixDex introduces its own volatility-driven bonding curve
+                to determine token prices. This enables:
+              </p>
+              <ul className="list-disc ml-6 mb-4 text-gray-400">
                 <li>
                   <strong>No Liquidity Fragmentation:</strong> VixDex maintains
                   a unified experience, eliminating any liquidity fragmentation
@@ -58,11 +59,14 @@ export default function Ecosystem() {
                   experience.
                 </li>
               </ul>
-              By combining the security and decentralization of Uniswap with a
-              unique volatility pricing model, VixDex opens the door to trading
-              on implied volatility, creating a brand new class of tokenized
-              assets.
-            </motion.p>
+              <p className="text-gray-400">
+                By combining the security and decentralization of Uniswap with a
+                unique volatility pricing model, VixDex opens the door to
+                trading on implied volatility, creating a brand new class of
+                tokenized assets.
+              </p>
+            </motion.div>
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
