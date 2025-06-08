@@ -12,13 +12,13 @@ export default function Roadmap() {
         'Goal: Build and finalize the core proof of concept for VixDex, demonstrating volatility trading on-chain.\n\nActions:\n- Complete the first version of VixDex with basic volatility trading functionality.\n- Integrate Uniswap V4 for liquidity management.\n- Build foundational smart contracts (Vix.sol, VolatilityERC20.sol).\n- Ensure the basic mechanics for trading implied volatility and minting tokens are working.',
     },
     {
-      date: 'Phase 2: End of May 2025',
+      date: 'Phase 2:  Completed ',
       title: 'Optimization & Dynamic Mechanisms',
       description:
         'Goal: Improve on-chain performance and introduce dynamic pricing and reserve mechanisms.\n\nActions:\n- Implement Huff programming for optimizing the bonding curve calculation.\n- Use Yul for efficient math operations like addition, subtraction, etc.\n- Introduce Solidity math libraries and bitwise operations to optimize transaction costs.\n- Implement a dynamic bonding curve to allow for flexible pricing based on real-time market conditions.\n- Upgrade the reserve swap mechanism to react dynamically to market volatility (IV).\n- Introduce dynamic reserve shift to enhance liquidity management.',
     },
     {
-      date: 'Phase 3: End of May 2025',
+      date: 'Phase 3:  Completed',
       title: 'Frontend Development & IV Oracle Integration',
       description:
         'Goal: Build a user-friendly interface and integrate a decentralized implied volatility oracle.\n\nActions:\n- Develop a user-centric frontend with features like notifications and chats (similar to pump.fun).\n- Integrate IV Oracle using ICP for decentralized implied volatility data.\n- Expand token support (including USDC, USDT, and ETH) for greater compatibility.\n- Implement a universal volume tracking system for all pairs.',
